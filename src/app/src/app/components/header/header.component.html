@@ -1,0 +1,19 @@
+<header class="header">
+  <nav class="nav-container">
+    <div class="logo">
+      <a href="/">ATLAS TCG</a>
+    </div>
+
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li><a href="/cartes">Toutes les cartes</a></li>
+      <li><a href="/sets">Sets</a></li>
+      <li><a href="/promotions">Promotions</a></li>
+      <li><a href="/nouveautes">Nouveautés</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>

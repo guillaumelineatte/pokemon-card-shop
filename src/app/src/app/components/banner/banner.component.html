@@ -1,0 +1,11 @@
+<div class="banner">
+  <div class="carousel">
+    <div class="slide" [ngStyle]="{'transform': 'translateX(-' + currentSlide * 100 + '%)'}" *ngFor="let image of images">
+      <img [src]="image.url" [alt]="image.alt">
+    </div>
+  </div>
+  <div class="controls">
+    <button class="prev" (click)="prevSlide()">❮</button>
+    <button class="next" (click)="nextSlide()">❯</button>
+  </div>
+</div>
